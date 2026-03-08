@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Crown, Flame, Sword, Shield, Heart, Snowflake } from "lucide-react";
 
 const reasons = [
-  { icon: Crown, text: "Você é a rainha que governa meu coração com sabedoria e amor" },
-  { icon: Flame, text: "Sua força é como fogo de dragão — indomável e magnífica" },
-  { icon: Snowflake, text: "Como Jon Snow no inverno, eu sempre encontro calor ao seu lado" },
-  { icon: Shield, text: "Você me protege com seu amor, como um escudo de aço valiriano" },
-  { icon: Heart, text: "Nosso amor é como fogo e gelo — diferente, intenso e eterno" },
-  { icon: Sword, text: "Juntos somos invencíveis, como Daenerys e Jon contra a escuridão" },
+  { icon: Crown, text: "Você é uma das mulheres mais importantes da minha vida, te acho muito foda pelo seu jeito e pela pessoa que é." },
+  { icon: Flame, text: "Gosta de dragões, principalmente a Meleys. Porque mano, ela é muito rápida mesmo!" },
+  { icon: Shield, text: "A maneira como você enxerga a vida, as pessoas e lida com isso é com certeza o que eu mais admiro em ti." },
+  { icon: Sword, text: "Apaixonada por motos, e torço por ti para que consiga realizar seu sonho de ter uma!" },
+  { icon: Snowflake, text: "Sua companhia me faz muito bem, desde que começamos a conversar todos os dias, trocar ideias, resenhar, me sinto mais disposto em todos os campos, obrigado!" },
+  { icon: Heart, text: "Se eu fosse listar tudo mesmo, essa página não teria fim. Só quero te dizer que te amo muito!" },
 ];
 
 const ReasonsSection = () => (
