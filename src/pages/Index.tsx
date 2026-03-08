@@ -1,7 +1,7 @@
 import FloatingHearts from "@/components/FloatingHearts";
 import HeroSection from "@/components/HeroSection";
 import ReasonsSection from "@/components/ReasonsSection";
-import TimelineSection from "@/components/TimelineSection";
+import QuotesSection from "@/components/QuotesSection";
 import ClosingSection from "@/components/ClosingSection";
 
 const Index = () => (
@@ -10,7 +10,7 @@ const Index = () => (
     <div className="relative z-10">
       <HeroSection />
       <ReasonsSection />
-      <TimelineSection />
+      <QuotesSection />
       <ClosingSection />
     </div>
   </div>

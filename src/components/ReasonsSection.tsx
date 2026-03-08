@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Heart, Star, Sparkles, Sun, Music, Coffee } from "lucide-react";
+import { Heart, Star, Sparkles, Sun, Flower2, Crown } from "lucide-react";
 
 const reasons = [
-  { icon: Heart, text: "Your smile lights up my entire world" },
-  { icon: Star, text: "You make even ordinary days feel magical" },
-  { icon: Sparkles, text: "Your kindness inspires me every single day" },
-  { icon: Sun, text: "You are my sunshine on the cloudiest days" },
-  { icon: Music, text: "Every song reminds me of you" },
-  { icon: Coffee, text: "Morning coffee tastes better with you" },
+  { icon: Crown, text: "Você é a mulher mais forte e incrível que eu conheço" },
+  { icon: Heart, text: "Seu sorriso ilumina todos os meus dias" },
+  { icon: Sparkles, text: "Sua bondade e gentileza inspiram todos ao seu redor" },
+  { icon: Star, text: "Você transforma momentos simples em algo mágico" },
+  { icon: Sun, text: "Você é minha luz, minha paz e meu porto seguro" },
+  { icon: Flower2, text: "O mundo é mais bonito porque você existe nele" },
 ];
 
 const ReasonsSection = () => (
@@ -17,10 +17,20 @@ const ReasonsSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="text-4xl md:text-5xl font-display font-bold text-center text-foreground mb-16"
+      className="text-4xl md:text-5xl font-display font-bold text-center text-foreground mb-4"
     >
-      Reasons I <span className="text-primary italic">Love</span> You
+      Por que você é <span className="text-primary italic">especial</span>
     </motion.h2>
+
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.2, duration: 0.6 }}
+      className="text-center text-muted-foreground font-body mb-16 max-w-md mx-auto"
+    >
+      Algumas das infinitas razões pelas quais eu te admiro
+    </motion.p>
 
     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
       {reasons.map((reason, i) => (
