@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Lora', 'serif'],
+        display: ['Cinzel', 'serif'],
+        body: ['Crimson Text', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,9 +51,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        blush: "hsl(var(--blush))",
+        fire: "hsl(var(--fire))",
+        "fire-glow": "hsl(var(--fire-glow))",
+        ice: "hsl(var(--ice))",
         gold: "hsl(var(--gold))",
-        "rose-glow": "hsl(var(--rose-glow))",
+        blood: "hsl(var(--blood))",
+        steel: "hsl(var(--steel))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
