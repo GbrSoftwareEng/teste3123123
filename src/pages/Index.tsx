@@ -1,14 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import FloatingHearts from "@/components/FloatingHearts";
+import HeroSection from "@/components/HeroSection";
+import ReasonsSection from "@/components/ReasonsSection";
+import TimelineSection from "@/components/TimelineSection";
+import ClosingSection from "@/components/ClosingSection";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+const Index = () => (
+  <div className="relative min-h-screen bg-background overflow-hidden">
+    <FloatingHearts />
+    <div className="relative z-10">
+      <HeroSection />
+      <ReasonsSection />
+      <TimelineSection />
+      <ClosingSection />
     </div>
-  );
-};
+  </div>
+);
 
 export default Index;
