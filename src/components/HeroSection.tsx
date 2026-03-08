@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/got-hero.jpg";
+import landscapeImg from "@/assets/got-landscape.jpg";
 import emblemImg from "@/assets/dragon-emblem.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-    {/* Background image */}
+    {/* Background landscape */}
     <div className="absolute inset-0">
-      <img src={heroImg} alt="Daenerys e Jon Snow" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+      <img src={landscapeImg} alt="Paisagem épica com dragões" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background" />
     </div>
 
     <div className="relative z-10 text-center px-6">
