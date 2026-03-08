@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,52 +6,54 @@
 
 @layer base {
   :root {
-    --background: 30 50% 97%;
-    --foreground: 350 30% 20%;
+    --background: 220 20% 8%;
+    --foreground: 40 30% 90%;
 
-    --card: 30 40% 95%;
-    --card-foreground: 350 30% 20%;
+    --card: 220 18% 12%;
+    --card-foreground: 40 30% 90%;
 
-    --popover: 30 50% 97%;
-    --popover-foreground: 350 30% 20%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 30% 90%;
 
-    --primary: 350 60% 55%;
-    --primary-foreground: 30 50% 97%;
+    --primary: 25 90% 55%;
+    --primary-foreground: 220 20% 8%;
 
-    --secondary: 30 30% 90%;
-    --secondary-foreground: 350 30% 25%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 30% 85%;
 
-    --muted: 30 20% 92%;
-    --muted-foreground: 350 15% 45%;
+    --muted: 220 12% 16%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 38 70% 60%;
-    --accent-foreground: 350 30% 15%;
+    --accent: 40 70% 50%;
+    --accent-foreground: 220 20% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 90%;
 
-    --border: 350 25% 88%;
-    --input: 350 25% 88%;
-    --ring: 350 60% 55%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 25 90% 55%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --rose-glow: 350 80% 70%;
-    --cream: 30 50% 97%;
-    --gold: 38 70% 60%;
-    --blush: 350 40% 92%;
+    --fire: 25 90% 55%;
+    --fire-glow: 15 100% 45%;
+    --ice: 200 80% 60%;
+    --gold: 40 70% 50%;
+    --blood: 0 70% 40%;
+    --steel: 220 10% 40%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Lora', serif;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Crimson Text', serif;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 25 90% 55%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 25 90% 55%;
   }
 }
 
@@ -70,27 +72,39 @@
   }
 }
 
-@keyframes float-heart {
+@keyframes float-ember {
   0% {
-    transform: translateY(100vh) scale(0);
+    transform: translateY(100vh) scale(0) rotate(0deg);
     opacity: 0;
   }
   10% {
     opacity: 1;
   }
   90% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   100% {
-    transform: translateY(-10vh) scale(1);
+    transform: translateY(-10vh) scale(1) rotate(360deg);
     opacity: 0;
   }
 }
 
 .floating-heart {
-  animation: float-heart linear forwards;
+  animation: float-ember linear forwards;
   position: fixed;
   pointer-events: none;
   z-index: 0;
-  color: hsl(var(--primary) / 0.3);
+}
+
+/* Ornamental divider */
+.ornament-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--gold) / 0.6),
+    hsl(var(--gold)),
+    hsl(var(--gold) / 0.6),
+    transparent
+  );
+  height: 1px;
 }

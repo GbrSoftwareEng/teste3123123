@@ -1,32 +1,32 @@
 import { useEffect, useState } from "react";
-import { Heart } from "lucide-react";
+import { Flame } from "lucide-react";
 
-const FloatingHearts = () => {
-  const [hearts, setHearts] = useState<{ id: number; left: number; size: number; duration: number; delay: number }[]>([]);
+const FloatingEmbers = () => {
+  const [embers, setEmbers] = useState<{ id: number; left: number; size: number; duration: number; delay: number }[]>([]);
 
   useEffect(() => {
-    const generated = Array.from({ length: 12 }, (_, i) => ({
+    const generated = Array.from({ length: 15 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
-      size: 12 + Math.random() * 20,
-      duration: 8 + Math.random() * 12,
-      delay: Math.random() * 10,
+      size: 8 + Math.random() * 14,
+      duration: 10 + Math.random() * 15,
+      delay: Math.random() * 12,
     }));
-    setHearts(generated);
+    setEmbers(generated);
   }, []);
 
   return (
     <>
-      {hearts.map((h) => (
-        <Heart
-          key={h.id}
-          className="floating-heart fill-current"
+      {embers.map((e) => (
+        <Flame
+          key={e.id}
+          className="floating-heart text-fire opacity-30"
           style={{
-            left: `${h.left}%`,
-            width: h.size,
-            height: h.size,
-            animationDuration: `${h.duration}s`,
-            animationDelay: `${h.delay}s`,
+            left: `${e.left}%`,
+            width: e.size,
+            height: e.size,
+            animationDuration: `${e.duration}s`,
+            animationDelay: `${e.delay}s`,
             animationIterationCount: "infinite",
           }}
         />
@@ -35,4 +35,4 @@ const FloatingHearts = () => {
   );
 };
 
-export default FloatingHearts;
+export default FloatingEmbers;
